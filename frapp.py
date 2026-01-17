@@ -111,7 +111,46 @@ st.markdown("<hr style='border: none; height: 3px; background-color: #2c6e49; ma
 #abhi columns me variaations hai..
 cols1, cols2 = st.columns(2)
 with cols1:
-    st.header("Weather Analysis")
+     with st.expander("Know More About Weather Prediction"):
+        st.write("""
+        Weather Prediction is a crucial aspect of modern agriculture, enabling farmers to make informed decisions based on anticipated weather conditions. By utilizing advanced meteorological models and data analysis techniques, weather prediction systems can provide accurate forecasts for temperature, rainfall, humidity, and other climatic factors that directly impact crop growth and yield.
+        """)
+         APP_URL = "https://weather-prediction-bu7p6nawxu45huhizjyedx.streamlit.app/"
+
+    st.markdown(f"""
+    <style>
+    .click-card {{
+        padding: 30px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+        text-align: center;
+        font-size: 22px;
+        font-weight: 800;
+        color: #0a0908;
+        transition: 
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            background 0.25s ease;
+    }}
+
+    .click-card:hover {{
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+        background: linear-gradient(135deg, #d9ed92, #ff9b54);
+    }}
+    </style>
+
+    <a href="{APP_URL}" target="_blank" style="text-decoration:none">
+        <div class="click-card">
+            Crop-Disease Detection
+        </div>
+    </a>
+
+    """, unsafe_allow_html=True)
+
+         
+    
     
 with cols2:
     with st.expander("Know More About Crop-Disease Detection"):
@@ -154,3 +193,4 @@ with cols2:
     </a>
 
     """, unsafe_allow_html=True)
+
