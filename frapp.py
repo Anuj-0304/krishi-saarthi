@@ -115,7 +115,7 @@ with cols1:
     
 with cols2:
     with st.expander("Know More About Crop-Disease Detection"):
-        '''st.write("""
+        st.write("""
         Crop-Disease Detection is an advanced application that leverages machine learning and image processing techniques to identify diseases in various crops. By analyzing images of plant leaves, the system can accurately diagnose common diseases affecting crops such as tomatoes, potatoes, wheat, and more.
         """)
 
@@ -152,4 +152,5 @@ with cols2:
             Crop-Disease Detection
         </div>
     </a>
-    """, unsafe_allow_html=True)'''
+
+    """, unsafe_allow_html=True)
