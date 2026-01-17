@@ -2,7 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import base64
+from PIL import Image
 
+
+img = Image.open("website_logo.jpg")
+st.image(img,width=200)
 #Background color yaha hai..
 st.markdown(
     """
@@ -50,7 +54,7 @@ st.markdown(
 )
 #title css change..
 st.markdown(
-    "<h1 style='text-align: left; color: #0a0908; font-size: 50px;'>Krishi Saarthi</h1>",
+    "<h1 style='text-align: center; color: #0a0908; font-size: 80px;'>Krishi Saarthi</h1>",
     unsafe_allow_html=True
 )
 st.markdown("<hr style='border: none; height: 3px; background-color: #2c6e49; margin: 20px 0;'>",unsafe_allow_html=True)
@@ -111,11 +115,14 @@ st.markdown("<hr style='border: none; height: 3px; background-color: #2c6e49; ma
 #abhi columns me variaations hai..
 cols1, cols2 = st.columns(2)
 with cols1:
-     with st.expander("Know More About Weather Prediction"):
+    with st.expander("Know More About Weather Prediction"):
         st.write("""
         Weather Prediction is a crucial aspect of modern agriculture, enabling farmers to make informed decisions based on anticipated weather conditions. By utilizing advanced meteorological models and data analysis techniques, weather prediction systems can provide accurate forecasts for temperature, rainfall, humidity, and other climatic factors that directly impact crop growth and yield.
         """)
-         APP_URL = "https://weather-prediction-bu7p6nawxu45huhizjyedx.streamlit.app/"
+
+    
+    
+    APP_URL = "https://weather-prediction-bu7p6nawxu45huhizjyedx.streamlit.app/"
 
     st.markdown(f"""
     <style>
@@ -148,8 +155,9 @@ with cols1:
     </a>
 
     """, unsafe_allow_html=True)
-
-         
+    st.markdown("<hr style='border: none; height: 3px; background-color: #2c6e49; margin: 20px 0;'>",unsafe_allow_html=True)
+    
+############################# 
     
     
 with cols2:
@@ -193,4 +201,15 @@ with cols2:
     </a>
 
     """, unsafe_allow_html=True)
+
+    st.markdown("<hr style='border: none; height: 3px; background-color: #2c6e49; margin: 20px 0;'>",unsafe_allow_html=True)
+
+#############################
+st.markdown(
+    "<h1 style='text-align: center; color: #0a0908; font-size: 40px;'>Crop Care/Maintenance advisory</h1>",
+    unsafe_allow_html=True
+)
+
+    
+
 
