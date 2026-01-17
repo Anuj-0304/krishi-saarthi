@@ -150,7 +150,7 @@ with cols1:
 
     <a href="{APP_URL}" target="_blank" style="text-decoration:none">
         <div class="click-card">
-            Crop-Disease Detection
+            Weather Prediction
         </div>
     </a>
 
@@ -196,7 +196,7 @@ with cols2:
 
     <a href="{APP_URL}" target="_blank" style="text-decoration:none">
         <div class="click-card">
-            Crop-Disease Detection
+            AI Saarthi
         </div>
     </a>
 
@@ -209,6 +209,40 @@ st.markdown(
     "<h1 style='text-align: center; color: #0a0908; font-size: 40px;'>Crop Care/Maintenance advisory</h1>",
     unsafe_allow_html=True
 )
+APP_URL = "https://aiadvisory-rtmavckgcc5tbzr4nqzunu.streamlit.app/"
+
+st.markdown(f"""
+    <style>
+    .click-card {{
+        padding: 30px;
+        border-radius: 18px;
+        background: lin
+        ear-gradient(135deg, #e0f2fe, #f8fafc);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+        text-align: center;
+        font-size: 22px;
+        font-weight: 800;
+        color: #0a0908;
+        transition: 
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            background 0.25s ease;
+    }}
+
+    .click-card:hover {{
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+        background: linear-gradient(135deg, #d9ed92, #ff9b54);
+    }}
+    </style>
+
+    <a href="{APP_URL}" target="_blank" style="text-decoration:none">
+        <div class="click-card">
+            Crop-Disease Detection
+        </div>
+    </a>
+
+    """, unsafe_allow_html=True)
 
     
 
